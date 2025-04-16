@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles+.css" />
+  <title>Bluestar</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header class="main-header">
+    <div class="header-flex">
+      <div class="logo">
+        <img style="height: 120px;" src="images/logo.png" alt="Логотип" />
+        <span class="site-title">Bluestar</span>
+      </div>
+      <nav class="main-nav">
+        <a href="#part1">Товар 1</a>
+        <a href="#part2">Товар 2</a>
+        <a href="#part3">Товар 3</a>
+      </nav>
+      <div class="hamburger" onclick="document.querySelector('.mobile-nav').classList.toggle('show')">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="header-contacts">
+        <span>8-987-827-13-37</span>
+      </div>
+    </div>
+    <div class="mobile-nav">
+      <a href="#part1">Товар 1</a>
+      <a href="#part2">Товар 2</a>
+      <a href="#part3">Товар 3</a>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <h1>Уют и качество с Bluestar</h1>
+        <p>Мы создаем мебель, которая делает ваш дом лучше.</p>
+        <div class="hero-buttons">
+          <a href="#" class="btn">Записаться</a>
+          <a href="#" class="btn btn-outline">О нас</a>
+        </div>
+      </div>
+      <div class="hero-images">
+        <img src="images/fig1.png" class="floating fig1" alt="" />
+        <img src="images/fig2.png" class="floating fig2" alt="" />
+      </div>
+    </div>
+  </section>
+
+  <section class="news">
+    <div class="container">
+      <h2 class="section-title">Новости</h2>
+      <div class="news-grid">
+        <article class="news-card">
+          <img src="images/news1.jpg" alt="Новость 1" />
+          <h3>Сезон ремонтов стартовал</h3>
+          <p>Количество транзакций за соответствующие изделия выросло на <span class="highlight">34%</span>.</p>
+          <a href="#" class="btn-sm">Подробнее</a>
+        </article>
+        <article class="news-card">
+          <img src="images/news2.jpg" alt="Новость 2" />
+          <h3>Новая фабрика березового шпона</h3>
+          <p>Производительность — <span class="highlight">14 тыс. м³</span> продукции в год.</p>
+          <a href="#" class="btn-sm">Подробнее</a>
+        </article>
+        <article class="news-card">
+          <img src="images/news3.jpg" alt="Новость 3" />
+          <h3>Мебель на заказ растет</h3>
+          <p>Доля в потреблении — <span class="highlight">12%</span> в 2025 году.</p>
+          <a href="#" class="btn-sm">Подробнее</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="part1" class="product-section bg-light">
+    <div class="container">
+      <img src="images/fon1.png" alt="Кровать" class="float-img" />
+      <p>
+        Кровать Симона подчеркнет <span class="highlight">индивидуальность интерьера</span> и создаст уют. Каркас выполнен из ДСП и фанеры, Внутренняя дополнительная царга ЛДСП увеличивает жесткость конструкции и обеспечивает надежность кровати.
+        За счет реализованной функции Base Select в конструктиве кровати, основание можно заказать из ассортимента под конкретный запрос покупателя. Простая геометрия и высокая спинка подойдут ценителям минимализма.
+      </p>
+    </div>
+  </section>
+
+  <section id="part2" class="product-section bg-accent">
+    <div class="container product-flex reverse">
+      <img src="images/fon2.png" alt="Товар 2" class="product-img" />
+      <div class="product-info">
+        <h2>Прихожая Трамп</h2>
+        <p>Функциональная и стильная прихожая в духе лофт. Удобное хранение и современный внешний вид.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="part3" class="product-section bg-light">
+    <div class="container product-flex">
+      <img src="images/fon3.png" alt="Товар 3" class="product-img" />
+      <div class="product-info">
+        <h2>Комод Ливерпуль</h2>
+        <p>Практичный комод с шариковыми направляющими и изящным дизайном. Отличное дополнение к спальне.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container footer-content">
+      <div class="footer-info">
+        <h3>Свяжитесь с нами</h3>
+        <form action="#" method="POST">
+          <input type="text" placeholder="Ваше имя" required />
+          <input type="email" placeholder="Email" required />
+          <textarea rows="4" placeholder="Ваше сообщение" required></textarea>
+          <button type="submit" class="btn">Отправить</button>
+        </form>
+      </div>
+      <div class="footer-map">
+        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Aaaacccc&source=constructor" frameborder="0"></iframe>
+      </div>
+    </div>
+    <div class="container copyright">
+      <p>&copy; 2025 Bluestar. Все права защищены.</p>
+    </div>
+  </footer>
+
+  <a href="#top" class="tap">⬆</a>
+</body>
+</html>
